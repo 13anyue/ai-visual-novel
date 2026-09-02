@@ -30,6 +30,8 @@ function initApp(){
   Router.reg('/phone/chat/:id',(el,p)=>Pages2.phoneChatDetail(p[1]));
   Router.reg('/phone/forum',()=>Pages2.phoneForum());
   Router.reg('/phone/mail',()=>Pages2.phoneMail());
+  Router.reg('/worldNotes',()=>Pages2.worldNotes());
+  Router.reg('/customUI',()=>Pages2.customUI());
   Router.init();
   if(!Store.state.currentGame&&(window.location.hash===''||window.location.hash==='#/'))Pages.splash();
 }
